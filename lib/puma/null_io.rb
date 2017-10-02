@@ -30,5 +30,11 @@ module Puma
     #
     def close
     end
+
+    # EOF is always true
+    def eof?
+      true
+    end
+    alias_method :eof, :eof?
   end
 end
